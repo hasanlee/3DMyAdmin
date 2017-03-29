@@ -3,12 +3,14 @@ package com.hasanli.a3dmyadmin;
 
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
+import android.text.TextUtils;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Spinner;
+import android.widget.Toast;
 
 import com.google.firebase.auth.api.model.StringList;
 import com.google.firebase.database.DataSnapshot;
@@ -52,21 +54,43 @@ public class AddItemFragment extends Fragment {
         mAddBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                mDatabase = FirebaseDatabase.getInstance().getReference("spinners");
-                String modelNo = mModelNo.getText().toString().trim();
-                String modelName = mModelName.getText().toString().trim();
-                Integer modelPrice = Integer.parseInt(mModelPrice.getText().toString().trim());
-                String modelImg = mImgUrl.getText().toString().trim();
 
-                //yeni spinner obyekti yarat
-                SpinnerModel model = new SpinnerModel();
+                if(TextUtils.isEmpty(mModelNo.getText().toString().trim())){
+                    mModelNo.setError("Enter model number!");
+                } else {
+                    if (TextUtils.isEmpty(mModelName.getText().toString().trim())){
+                        mModelName.setError("Enter model name!");
+                    } else {
+                        if (TextUtils.isEmpty(mModelPrice.getText().toString().trim())){
+                            mModelPrice.setError("Enter model price!");
+                        } else {
+                            if (TextUtils.isEmpty(mImgUrl.getText().toString().trim())){
+                                mImgUrl.setError("Enter image url!");
+                            } else {
+                                mDatabase = FirebaseDatabase.getInstance().getReference("spinners");
+                                final String modelNo = mModelNo.getText().toString().trim();
+                                String modelName = mModelName.getText().toString().trim();
+                                Integer modelPrice = Integer.parseInt(mModelPrice.getText().toString().trim());
+                                String modelImg = mImgUrl.getText().toString().trim();
 
-                //melumatlare elave et
-                model.setName(modelName);
-                model.setImage(modelImg);
-                model.setPrice(modelPrice);
 
-                mDatabase.child(modelNo).setValue(model);
+                                //yeni spinner obyekti yarat
+                                final SpinnerModel model = new SpinnerModel();
+
+                                //melumatlare elave et
+                                model.setName(modelName);
+                                model.setImage(modelImg);
+                                model.setPrice(modelPrice);
+
+                                mDatabase.child(modelNo).setValue(model);
+                                Toast.makeText(getContext(), "Product added.", Toast.LENGTH_SHORT).show();
+                            }
+                        }
+                    }
+                }
+
+                //if else bitti
+
             }
         });
 

@@ -16,6 +16,11 @@
     <string name="model_no">Model No</string>
     <string name="model_price">Model Price</string>
     <string name="add_product">Add Product</string>
+    <string name="logout_btn">Logout</string>
+    <string name="user_name_text">Welcome Username</string>
+    <string name="products_sayi">Products Sayi</string>
+    <string name="image_url_text">Image URL :</string>
+    <string name="http_link_start">http://</string>
 
     <string-array name="vip">
         <item>false</item>
