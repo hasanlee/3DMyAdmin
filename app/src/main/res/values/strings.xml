@@ -6,14 +6,19 @@
     <string name="enter_password">Enter Password</string>
     <string name="login_title">hPanel for 3D Products</string>
     <string name="title_activity_panel">PanelActivity</string>
-    <string name="title_home">Home</string>
     <string name="title_dashboard">Dashboard</string>
-    <string name="title_notifications">Notifications</string>
+    <string name="title_additem">Add Item</string>
+    <string name="title_other">Settings</string>
     <string name="register_for_hpanel_title">Register for hPanel</string>
     <string name="sign_up">Sign up</string>
+    <string name="image_url">Image URL</string>
+    <string name="model_name">Model Name</string>
+    <string name="model_no">Model No</string>
+    <string name="model_price">Model Price</string>
+    <string name="add_product">Add Product</string>
 
-    <array name="vip">
+    <string-array name="vip">
         <item>false</item>
         <item>true</item>
-    </array>
+    </string-array>
 </resources>
