@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "1070590230115",
+    "firebase_url": "https://dprinted-products.firebaseio.com",
+    "project_id": "dprinted-products",
+    "storage_bucket": "dprinted-products.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1070590230115:android:939e1c4544ea5e28",
+        "android_client_info": {
+          "package_name": "com.hasanli.a3dmyadmin"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1070590230115-hfi6j94hfm2cg3pbb54bm9tgi2jrblcq.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBQQVCZrVPeof46f18AJArbxkmhr_82_fo"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

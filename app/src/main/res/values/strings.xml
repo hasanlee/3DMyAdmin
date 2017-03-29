@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">3DMyAdmin</string>
+    <string name="app_dev">Admin panel for 3D Products. v1.0</string>
+    <string name="button_login">Sign In</string>
+    <string name="enter_email">Enter E-mail</string>
+    <string name="enter_password">Enter Password</string>
+    <string name="login_title">hPanel for 3D Products</string>
+    <string name="title_activity_panel">PanelActivity</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+    <string name="register_for_hpanel_title">Register for hPanel</string>
+    <string name="sign_up">Sign up</string>
+
+    <array name="vip">
+        <item>false</item>
+        <item>true</item>
+    </array>
+</resources>
