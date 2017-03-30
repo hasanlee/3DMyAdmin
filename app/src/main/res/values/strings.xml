@@ -19,8 +19,9 @@
     <string name="logout_btn">Logout</string>
     <string name="user_name_text">Welcome Username</string>
     <string name="products_sayi">Products Sayi</string>
-    <string name="image_url_text">Image URL :</string>
+    <string name="image_url_text">Select Image :</string>
     <string name="http_link_start">http://</string>
+    <string name="select_image_from_storage">Select image from storage</string>
 
     <string-array name="vip">
         <item>false</item>
